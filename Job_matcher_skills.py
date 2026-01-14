@@ -28,7 +28,7 @@ st.markdown("---")
 def load_jobs():
     try:
         # CHANGE THIS PATH according to your file location
-        path = r"/Users/farahrahin/Desktop/Y3 SEM1 /INTRODUCTION TO AI/GROUP PROJECT AI/jobstreet_all_job.csv"
+        path = "jobstreet_all_job.csv"
         
         df = pd.read_csv(path)
         df.columns = df.columns.str.strip()
@@ -245,4 +245,5 @@ if resume_file:
                             st.write(row["Description Preview"])
 
 else:
+
     st.info("Please upload your resume to start matching.")
